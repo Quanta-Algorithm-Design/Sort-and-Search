@@ -24,7 +24,7 @@ def countSort(k, n, arrA):
         pos[item] += 1
 
     # Find the number of items -LE the item and store it instead of count.
-    for i in range(1, upBound):
+    for i in range(1, k):
         pos[i] += pos[i-1]
 
     out = [0] * n
